@@ -7,18 +7,42 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
 
-# Editor directories and files
+# Production build
+dist/
+dist-ssr/
+build/
+
+# Local environment variables
+.env
+.env.*
+!.env.example
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Vite / bundler cache
+.cache/
+vite.config.ts.timestamp-*
+vite.config.js.timestamp-*
+
+# Optional: lock files (solo si NO quieres subirlos)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
